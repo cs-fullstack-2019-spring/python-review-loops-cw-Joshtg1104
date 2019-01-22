@@ -27,16 +27,21 @@ def exercise1():
 # ```
 
 def exercise2():
-    num = 0
-    even = num % 2
-    odd = num % 3
+    even = 0
+    odd = 0
+
     for num in range(10):
-        evcounter = even+1
-        odcounter = odd+1
-        while(even):
-            print("Number of even numbers: " + str(evcounter))
-        while(odd):
-            print("Number of odd numbers: " + str(odcounter))
+        if num % 2 == 0:
+            even+=1
+        else:
+            odd+=1
+
+        #
+        # odcounter = odd+1
+        # while(even):
+    print("Number of even numbers: " + str(even))
+# while(odd):
+    print("Number of odd numbers: " + str(odd))
 
 # ### Exercise 3:
 # Write a Python program that accepts a sequence of lines (blank line to terminate) as input and
@@ -53,9 +58,8 @@ def exercise3():
         if(x != ""):
             continue
         elif(x == ""):
-            print(x)
             break
-
+    print(x)
 
 
 if __name__ == '__main__':
